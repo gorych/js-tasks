@@ -1,0 +1,63 @@
+html {
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.tag-field {
+	display: table;
+	min-width: 220px;
+	line-height: 20px;
+	margin: 20px;
+	padding: 0 3px;
+	background-color: #f5f5f5;
+	border: 1px solid #00695c;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0 7px;
+	margin: 3px 3px 3px 0;
+	border-radius: 2px;
+	background-color: #00796b;
+	color: #eee;
+}
+
+.tag-field input {
+	display: inline;
+	box-sizing: border-box;
+	min-width: 210px;
+	margin: 5px 3px 5px 0;
+	background-color: #f5f5f5;
+	border: none;
+}
+
+.tag-field input:focus {
+	outline: none;
+}
+
+.tag-field .clear:before {
+	content: ' \00d7';
+	position: relative;
+	cursor: pointer;
+    cursor: hand;
+	font-size: 11pt;
+	top: 2px;
+}
+
+.tag-field .clear:hover:before {
+	color: #d32f2f;
+}
+
+.tag-field .tag .clear:hover:before {
+	color: #ffea00;
+}
+
+.clear-all {
+	float: right;
+	line-height: 26px;
+}
+
